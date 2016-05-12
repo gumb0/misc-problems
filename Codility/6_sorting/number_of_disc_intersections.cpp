@@ -4,7 +4,7 @@
 
 int solution(vector<int> &A) {
     // y=0 axes intersection x-coordinate and "right side" flag pairs
-    vector<pair<int, bool>> discLimits;
+    vector<pair<int64_t, bool>> discLimits;
     for (size_t i = 0; i < A.size(); ++i)
     {
         discLimits.push_back(make_pair(i - A[i], false));
@@ -15,7 +15,7 @@ int solution(vector<int> &A) {
     
     int intersections = 0;
     int openDiscs = 0;
-    for (pair<int, bool> limit : discLimits)
+    for (pair<int64_t, bool> limit : discLimits)
     {
         if (limit.second)
         {
