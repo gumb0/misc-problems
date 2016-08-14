@@ -1,3 +1,5 @@
+// https://codility.com/programmers/task/count_semiprimes/
+
 vector<int> solution(int N, vector<int> &P, vector<int> &Q) {
     vector<int> counters(N + 1);
     for (long long i = 2; i <= N; ++i)
