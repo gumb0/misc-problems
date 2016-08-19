@@ -13,7 +13,7 @@ def get_balanced_and_height(root)
   left_balanced_and_height = get_balanced_and_height(root.child_left)   
   right_balanced_and_height = get_balanced_and_height(root.child_right)
 
-  balanced = left_balanced_and_height[0] and right_balanced_and_height[0] and (left_balanced_and_height[1] - right_balanced_and_height[1]).abs <= 1
+  balanced = left_balanced_and_height[0] && right_balanced_and_height[0] && (left_balanced_and_height[1] - right_balanced_and_height[1]).abs <= 1
   height = [left_balanced_and_height[1], right_balanced_and_height[1]].max + 1
 
   [balanced, height]
