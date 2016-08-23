@@ -9,7 +9,7 @@ class Node
 end
 
 def route_exists(node1, node2)
-    queue = Queue.new
+    queue = Array.new
     queue << node1
     
     visited = Set.new
